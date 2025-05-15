@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mission & Vision</title>
+    <link rel="stylesheet" href="styles.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('fildis.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
+    }
+    .mission-vision {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 850px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2em;
+      color: #2c3e50;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.9em;
+      color: #7f8c8d;
+    }
+
+    .text {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    @media screen and (max-width: 768px) {
+      .dashboard {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        box-shadow: none;
+        border-bottom: 2px solid #ddd;
+      }
+
+      .mission-vision {
+        padding: 20px;
+      }
+
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dashboard" id="dashboard">
+    <div class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="module.html">Module</a></li>
+        <li><a href="mission.html">Mission & Vision</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+
+    <section class="mission-vision">
+      <div class="container">
+        <h2 class="title">Mission <span class="subtitle">(Misyon)</span></h2>
+        <p class="text">
+          Maghatid ng de-kalidad, accessible, at makabuluhang mga materyales sa wikang Filipino na ginagamit sa iba’t ibang disiplina, upang suportahan ang pagkatuto ng mga estudyante, guro, at iba pang tagagamit sa mas mataas at propesyonal na antas.
+        </p>
+        <p class="text">
+          Layunin ng website na ito na magsilbing online na silid-aralan kung saan maaaring matuklasan, matutuhan, at magamit ang wikang Filipino sa larangan ng edukasyon, agham, teknolohiya, medisina, media, negosyo, at iba pa.
+        </p>
+
+        <h2 class="title">Vision <span class="subtitle">(Bisyon)</span></h2>
+        <p class="text">
+          Maging pangunahing online na plataporma sa pag-aaral at paggamit ng wikang Filipino sa iba’t ibang disiplina, tungo sa isang lipunang may mataas na pagpapahalaga sa sariling wika bilang daluyan ng kaalaman at propesyonalismo.
+        </p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
